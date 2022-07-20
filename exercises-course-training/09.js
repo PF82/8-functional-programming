@@ -145,7 +145,14 @@ const watchList = [
 
 // Only change code below this line
 
-const filteredList = "";
+const filteredList = watchList
+  .map(movie => {
+    return {
+      title: movie.Title,
+      rating: movie.imdbRating
+    }
+  })
+  .filter(movie => movie.rating >= 8);
 
 // Only change code above this line
 
