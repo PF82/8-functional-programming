@@ -22,13 +22,12 @@ are not always separated by spaces, and the array should not contain punctuation
 
 function splitify(str) {
     // Only change code below this line
-
-
+    return str.split(/\W/);
     // Only change code above this line
 }
 
 splitify("Hello World,I-am code");
 
 
-console.log()
+console.log(splitify("Hello World,I-am code"))
 // document.getElementById("demo").innerHTML = "";

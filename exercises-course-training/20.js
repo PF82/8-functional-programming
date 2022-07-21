@@ -15,13 +15,12 @@ return a string. For example, I-like-Star-Wars would be converted to I like Star
 
 function sentensify(str) {
     // Only change code below this line
-
-
+    return str.split(/\W/).join(" ");
     // Only change code above this line
 }
 
 sentensify("May-the-force-be-with-you");
 
 
-console.log()
+console.log(sentensify("May-the-force-be-with-you"))
 // document.getElementById("demo").innerHTML = "";
