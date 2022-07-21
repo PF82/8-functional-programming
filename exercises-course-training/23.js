@@ -17,13 +17,12 @@ Use the some method inside the checkPositive function to check if any element in
 
 function checkPositive(arr) {
   // Only change code below this line
-
-
+  return arr.some(val => val > 0);
   // Only change code above this line
 }
 
 checkPositive([1, 2, 3, -4, 5]);
 
 
-console.log()
+console.log(checkPositive([1, 2, 3, -4, 5]))
 // document.getElementById("demo").innerHTML = "";
