@@ -17,7 +17,7 @@ Change the nonMutatingPush function so it uses concat to add newItem to the end 
 
 function nonMutatingPush(original, newItem) {
   // Only change code below this line
-  return original.push(newItem);
+  return original.concat(newItem);
 
   // Only change code above this line
 }
@@ -27,5 +27,5 @@ const second = [4, 5];
 nonMutatingPush(first, second);
 
 
-console.log()
+console.log(nonMutatingPush(first, second))
 // document.getElementById("demo").innerHTML = "";
