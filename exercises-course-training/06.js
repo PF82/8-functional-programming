@@ -21,22 +21,20 @@ Note: Both functions should return an array, and any new parameters should be ad
 const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
 
 // Change code below this line
-function add(bookName) {
-
-  bookList.push(bookName);
-  return bookList;
-
+function add(arr, bookName) {
+  let newArr = [...arr];
+  newArr.push(bookName);
+  return newArr;
   // Change code above this line
 }
 
 // Change code below this line
-function remove(bookName) {
-  const book_index = bookList.indexOf(bookName);
-  if (book_index >= 0) {
+function remove(arr, bookName) {
+  let newArr = [...arr];
+  if (newArr.indexOf(bookName) >= 0) {
 
-    bookList.splice(book_index, 1);
-    return bookList;
-
+    newArr.splice(newArr.indexOf(bookName), 1);
+    return newArr;
     // Change code above this line
   }
 }

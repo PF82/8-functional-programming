@@ -13,6 +13,11 @@ const s = [23, 65, 98, 5];
 Array.prototype.myFilter = function (callback) {
     // Only change code below this line
     const newArray = [];
+    this.forEach(function (item) {
+        if (callback(item) == true) {
+            newArray.push(item);
+        }
+    })
     // Only change code above this line
     return newArray;
 };
